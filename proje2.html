@@ -12,8 +12,8 @@
 <body>
     <div class="main">
 
-  <h1 id="title"> DWinatech survey form</h1>
-  <p id="description">  thank you for taking the time to help me to add more video</p>
+  <h1 id="title"> freeCodeCamp Survey Form</h1>
+  <p id="description" style="font-weight: 30; font-family: sans-serif;">  Thank you for taking the time to help us improve the platform</p>
   <div class="contentm">
       <div class="contentf">
     
@@ -23,55 +23,128 @@
         <input id="name" type="text" placeholder="Enter your name" required/>
         <label for="email"  id="email-label">Email</label>
         <input id="email" type="email" placeholder="Enter your email" required/>
-        <label for="number"  id="number-label">Enter your rate from 1 to 10</label>
-        <input id="number" type="number" placeholder="Enter your rate" required min="1" max="10"/>
-<label for="dropdown" > Which option best describes your current role</label>
+        <label for="number"  id="number-label">Age<span>(optional)</span></label>
+        <input id="number" type="number" placeholder="Age" required min="1" max="10"/>
+        <div id="opti">
+<label for="dropdown"   placeholder="select current role" id="SS"> Which option best describes your current role?</label>
 
-<select id="dropdown">
-  <option value="student">Student</option>
+<select id="dropdown"  placeholder="select current role" name="role" required>
+  <option disabled selected value class="choice">select current role</option>
+  <option value="student">student</option>
   <option value="full-time-learner">full time learner</option>
  <option value="full-time-job"> full time job</option>
  <option value="fprefer-not-to-say"> prefer not to say</option>
  <option value="Other">Other</option>
 
-
-
 </select>
-<fieldset>
+</div>
 
-  <legend>
-    Would you recommend my channel to a friend
-  </legend>
+
+
+
+
+
+   <p>Would you recommend my channel to a friend</p>
+
   <input type="radio" name="action"checked id="definitely" value="definitely" />
   <label for="definitely">Definitely</label><br/>
-
-
 
   <input type="radio" name="action"checked id="Maybe" value="Maybe" />
   <label for="Maybe">Maybe</label><br/>
   <input type="radio" name="action"checked id="not-sure" value="not-sure" />
   <label for="not-sure">not sure</label><br/>
 
+<br>
+  
+
+  <label for="dropdown" > What is your favorite feature of freeCodeCamp to a friend?</label>
+
+  <select id="dropdown" name="fav" required class="choice">
+    <option disabled selected value>select an option</option>
+    <option value="challenges">challenges</option>
+    <option value="project">project</option>
+   <option value="community"> community</option>
+   <option value="open-source">open source</option>
+   <option value="Other">Other</option>
+  
+  </select>
+
+
+
+
+
+
+
+<div style="content: none;">
+
+<p>  What would you like to see improve? <span>(Check all that apply)</span></p>
+
+
+<input type="checkbox" name="Front-end-Projects"  />
+  <label for="video-length">Front-end Projects</label><br/>
+
+  <input type="checkbox" name="Back-end-Projects" />
+  <label for="Back-end-Projects">Back-end Projects</label><br/>
+  <input type="checkbox" name=" Data Visualization"  />
+  <label for="Data Visualization"> Data Visualization
+   </label><br/>
+
+  <input type="checkbox" name="Challenges" />
+  <label for="Challenges">Challenges </label><br/>
+
+  <input type="checkbox" name="Open Source Community" />
+  <label for="Open Source Community">Open Source Community </label><br/>
+
+
+
+
+
+  <input type="checkbox" name="Gitter help rooms"  />
+  <label for="Gitter help rooms">Gitter help roomsy </label><br/>
+
+
+
+
+
 
   
-</fieldset>
+  <input type="checkbox" name="Videos"  />
+  <label for="Videos">Videos</label><br/>
+
+
+  <input type="checkbox" name="City Meetups" />
+  <label for="City Meetups">City Meetups</label><br/>
+
+
+  <input type="checkbox" name="WIKI"  />
+  <label for="WIKI">WIKI</label><br/>
 
 
 
-<p>  What would you like to see improve?</p>
+  <input type="checkbox" name="Forum"  />
+  <label for="Forum">Forum</label><br/>
 
 
-<input type="checkbox" name="video-length"checked id="video-length" value="video-length" />
-  <label for="video-length">video-length</label><br/>
 
-  <input type="checkbox" name="content-quality"checked id="content-quality" value="content-quality" />
-  <label for="content-quality">content-quality</label><br/>
-  <input type="checkbox" name=" add more-videos"checked id=" add more-videos" value=" add more-videos" />
-  <label for=" add more-videos"> add more-videos</label><br/>
+  <input type="checkbox" name="Additional Courses"  />
+  <label for="Additional Courses">Additional Courses</label><br/>
 
 
-  <label  for="text-area"> Any comments or suggestion</label>
-  <textarea rows="4"  cols="40" id="text-area">Enter your comment here</textarea>
+
+
+
+
+
+
+
+
+
+
+  <label  for="text-area"  id="ptext" style="font-size: 1.125;"> Any comments or suggestion?</label>
+
+
+
+  <textarea rows="4"  cols="40" id="text-area" placeholder="Enter your comment here.."></textarea>
 
   <button type="submit" id="submit">submit</button>
 
@@ -82,7 +155,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
 </body>
 </html>
